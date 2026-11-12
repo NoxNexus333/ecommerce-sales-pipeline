@@ -8,13 +8,13 @@ and export a business-ready dataset optimized for financial forecasting.
 ## Tech Stack & Skills Demonstrated
 * **Languages & Tools:** Python, VS Code, Jupyter Notebooks, Git, GitHub
 * **Libraries:** Pandas, NumPy
-* **CoreCompetencies:** Data Auditing, Type Coercion, Logical Value Imputation, Outlier Handling, Automation Pipelines
+* **Core Competencies:** Data Auditing, Type Coercion, Logical Value Imputation, Outlier Handling, Automation Pipelines
 
 ## The Data Quality Ledger (Before vs. After)
 This ledger highlights the critical data quality issues uncovered during programmatic discovery and the systematic strategy
 implemented to resolve them.
 
-| Data Matric / Column | Detective Work (Issues Uncovered) | Engineering Strategy (The Fix) | Strategic Business Impact |
+| Data Metric / Column | Detective Work (Issues Uncovered) | Engineering Strategy (The Fix) | Strategic Business Impact |
 | :--- | :--- | :--- | :--- |
 | **Column Headers** | Hidden Whitespace padding (e.g., 'Order_ID'). | Applied Vector string clearing via '.columns.str.strip()'. | Previous catastrophic relational syntax errors during downstream database joins. |
 | **Price Column** | Contained corrupted alphabet text strings (like 'abd'). | Used 'errors='coerce' to strip text and fill gaps using distribution-safe 'median' pricing. | Reclaims valuable sales records without skewing financial averages or throwing application crashes. |
